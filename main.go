@@ -35,7 +35,7 @@ func main() {
 
 	for _, w := range weatherSamples {
 		if w.Temp != nil && w.Temp.Value != nil {
-			log.Printf("The temperature at %s is %f degrees %s\n",
+			log.Printf("The temperature now is at %s is %f degrees %s\n",
 				w.ObservationTime.Value, *w.Temp.Value, w.Temp.Units)
 		} else {
 			log.Printf("No temperature data available at %s\n",
